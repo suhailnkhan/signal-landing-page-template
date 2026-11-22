@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plainsheet · Shared budgets for small teams</title>
+  <meta name="description" content="Plainsheet turns your team's spending into one shared budget everyone can read. Join the waitlist for early access.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/albert-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/albert-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span data-s-name>Plainsheet</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-dark btn-sm" href="#join">Join the waitlist</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="pill" data-s-announcement hidden><span class="pill-dot" aria-hidden="true"></span><span></span></p>
+          <h1 id="hero-title" class="hero-title" data-s-headline>Know where the money goes, before the month ends.</h1>
+          <p class="hero-sub" data-s-subhead></p>
+          <form class="waitlist" id="join" novalidate data-s-form>
+            <label class="sr-only" for="w-email">Work email</label>
+            <input id="w-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required maxlength="254">
+            <button class="btn btn-accent" type="submit" data-s-button>Join the waitlist</button>
+          </form>
+          <p class="form-msg" data-s-msg aria-live="polite"></p>
+        </div>
+
+        <!-- Product screen, drawn in HTML and CSS: edit the labels and numbers here. -->
+        <div class="mock" aria-hidden="true">
+          <div class="mock-bar"><i></i><i></i><i></i><span>app.plainsheet.example / budgets</span></div>
+          <div class="mock-body">
+            <aside class="mock-side">
+              <b class="mock-logo"></b>
+              <span class="on">Budgets</span><span>Spending</span><span>Receipts</span><span>Team</span><span>Exports</span>
+            </aside>
+            <div class="mock-main">
+              <div class="mock-head"><div><small>March budget</small><strong>$18,400</strong></div><span class="mock-chip">On track</span></div>
+              <div class="mock-meter"><span style="width:62%"></span></div>
+              <div class="mock-legend"><span>$11,410 spent</span><span>$6,990 left</span></div>
+              <div class="mock-cards">
+                <div class="mock-card"><small>Marketing</small><strong>$3,920</strong><div class="mini"><span style="width:78%" class="warn"></span></div><em>78% of $5,000</em></div>
+                <div class="mock-card"><small>Product</small><strong>$5,140</strong><div class="mini"><span style="width:57%"></span></div><em>57% of $9,000</em></div>
+                <div class="mock-card"><small>Office</small><strong>$2,350</strong><div class="mini"><span style="width:53%"></span></div><em>53% of $4,400</em></div>
+              </div>
+              <div class="mock-chart">
+                <span style="height:38%"></span><span style="height:52%"></span><span style="height:44%"></span><span style="height:70%"></span><span style="height:58%"></span><span style="height:64%"></span><span style="height:48%"></span><span style="height:76%" class="hl"></span><span style="height:40%"></span><span style="height:55%"></span><span style="height:62%"></span><span style="height:50%"></span>
+              </div>
+              <ul class="mock-rows">
+                <li><b class="ic a"></b><span>Design tools</span><em>Marketing</em><strong>−$96.00</strong></li>
+                <li><b class="ic b"></b><span>Cloud hosting</span><em>Product</em><strong>−$412.50</strong></li>
+                <li><b class="ic c"></b><span>Team lunch</span><em>Office</em><strong>−$184.20</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos" aria-labelledby="logos-title" data-s-logos-section>
+      <div class="wrap">
+        <h2 id="logos-title" class="logos-title" data-s-logos-title>Teams trying the beta</h2>
+        <ul class="logo-row" data-s-logos></ul>
+      </div>
+    </section>
+
+    <section class="features wrap" id="features" aria-labelledby="features-title">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2 id="features-title" class="section-title">Everything a small team needs to stay on budget</h2>
+      </div>
+      <ul class="feature-grid" data-s-features></ul>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">How it works</p>
+          <h2 id="how-title" class="section-title">Set up in an afternoon</h2>
+        </div>
+        <ol class="how-steps" data-s-steps></ol>
+      </div>
+    </section>
+
+    <section class="pricing wrap" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-head center">
+        <p class="kicker">Pricing</p>
+        <h2 id="pricing-title" class="section-title">Simple plans that grow with you</h2>
+        <div class="billing" role="group" aria-label="Billing period">
+          <button type="button" class="billing-opt" aria-pressed="true" data-period="monthly">Monthly</button>
+          <button type="button" class="billing-opt" aria-pressed="false" data-period="annual">Yearly <span class="save">save up to 20%</span></button>
+        </div>
+      </div>
+      <div class="plans" data-s-plans></div>
+      <p class="plans-note" data-s-plans-note></p>
+    </section>
+
+    <section class="faq wrap" id="faq" aria-labelledby="faq-title">
+      <div class="faq-grid">
+        <div>
+          <p class="kicker">FAQ</p>
+          <h2 id="faq-title" class="section-title">Questions, answered</h2>
+          <p class="muted faq-contact">Something else? <a data-s-email href="mailto:hello@example.com">Email us</a>.</p>
+        </div>
+        <div class="faq-list" data-s-faqs></div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <div class="wrap final-inner">
+        <h2 id="final-title" class="final-title" data-s-cta-title>Stop finding out at month-end.</h2>
+        <p data-s-cta-text></p>
+        <a class="btn btn-accent" href="#join" data-s-cta-btn>Join the waitlist</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p class="brand"><span class="brand-mark" aria-hidden="true"></span><span data-s-name>Plainsheet</span></p>
+      <ul class="footer-links" data-s-links></ul>
+      <p class="muted">© <span data-s-year>2026</span> <span data-s-name>Plainsheet</span></p>
+    </div>
+  <p style="margin:0;padding:1rem 1rem 1.25rem;text-align:center;font-size:.8125rem;opacity:.7">Template by <a href="https://suhailnkhan.com/?utm_source=github&utm_medium=template-credit&utm_campaign=signal">Suhail N Khan</a></p>
+</footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/signal.js"></script>
+</body>
+</html>
